@@ -23,6 +23,7 @@ jobs:
                   name: "Test 8-jessie"
                   install: skip
                   script:
+                          - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
                           - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
                   env:
                           - NODE_VERSION=8-jessie
@@ -31,6 +32,7 @@ jobs:
                   name: "Test 8-jessie"
                   install: skip
                   script:
+                          - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
                           - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
                   env:
                           - NODE_VERSION=8-jessie
@@ -39,6 +41,7 @@ jobs:
                   name: "Test 8-jessie"
                   install: skip
                   script:
+                          - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
                           - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
                   env:
                           - NODE_VERSION=8-jessie
@@ -47,6 +50,7 @@ jobs:
                   name: "Test 10-jessie"
                   install: skip
                   script:
+                          - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
                           - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
                   env:
                           - NODE_VERSION=10-jessie
@@ -55,6 +59,7 @@ jobs:
                   name: "Test 10-jessie"
                   install: skip
                   script:
+                          - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
                           - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
                   env:
                           - NODE_VERSION=10-jessie
@@ -63,6 +68,7 @@ jobs:
                   name: "Test 10-jessie"
                   install: skip
                   script:
+                          - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
                           - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
                   if: branch = master
                   env:
